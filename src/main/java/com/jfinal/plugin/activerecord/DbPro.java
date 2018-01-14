@@ -17,7 +17,7 @@
 package com.jfinal.plugin.activerecord;
 
 import com.jfinal.plugin.activerecord.cache.ICache;
-import io.enoa.toolkit.str.StrKit;
+import com.jfinal.kit.StrKit;
 
 import java.sql.*;
 import java.util.ArrayList;

@@ -5,17 +5,16 @@ import com.alibaba.druid.wall.WallConfig;
 import com.alibaba.druid.wall.WallFilter;
 import com.jfinal.plugin.activerecord.dialect.MysqlDialect;
 import com.jfinal.plugin.druid.DruidPlugin;
-import io.enoa.json.kit.JsonKit;
-import io.enoa.toolkit.sys.PathKit;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.net.URISyntaxException;
 import java.util.List;
 
 public class ActiveRecordPluginTest {
 
   @Before
-  public void before() {
+  public void before() throws URISyntaxException {
     DruidPlugin dp = new DruidPlugin(
       "jdbc:mysql://localhost:3306/enoa?useUnicode=true&characterEncoding=utf-8&useSSL=false&nullNamePatternMatchesAll=true",
       "root",
@@ -40,7 +39,7 @@ public class ActiveRecordPluginTest {
     arp.setShowSql(true);
     arp.setDialect(new MysqlDialect());
 
-    String sqlBasePath = PathKit.getRootClassPath();
+    String sqlBasePath = ActiveRecordPluginTest.class.getClassLoader().getResource("").toURI().getPath();
 
     arp.setBaseSqlTemplatePath(sqlBasePath);
     arp.addSqlTemplate("template.sql");
@@ -52,7 +51,7 @@ public class ActiveRecordPluginTest {
   @Test
   public void testActiveRecord() {
     List<Record> records = Db.find(Db.getSql("User.list"));
-    System.out.println(JsonKit.toJson(records));
+    System.out.println(records);
   }
 
 }

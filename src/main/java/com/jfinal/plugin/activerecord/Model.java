@@ -17,7 +17,6 @@
 package com.jfinal.plugin.activerecord;
 
 import com.jfinal.plugin.activerecord.cache.ICache;
-import io.enoa.json.kit.JsonKit;
 
 import java.io.Serializable;
 import java.sql.Connection;
@@ -976,12 +975,12 @@ public abstract class Model<M extends Model> implements Serializable {
     return result;
   }
 
-  /**
-   * Return json string of this model.
-   */
-  public String toJson() {
-    return JsonKit.toJson(attrs);
-  }
+//  /**
+//   * Return json string of this model.
+//   */
+//  public String toJson() {
+//    return JsonKit.toJson(attrs);
+//  }
 
   public String getSql(String key) {
     return _getConfig().getSqlKit().getSql(key);

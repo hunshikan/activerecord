@@ -20,7 +20,7 @@ import com.jfinal.plugin.activerecord.SqlPara;
 import com.jfinal.template.Engine;
 import com.jfinal.template.Template;
 import com.jfinal.template.source.ISource;
-import io.enoa.toolkit.str.StrKit;
+import com.jfinal.kit.StrKit;
 
 import java.util.ArrayList;
 import java.util.HashMap;

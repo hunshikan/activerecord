@@ -16,7 +16,7 @@
 
 package com.jfinal.plugin.activerecord.generator;
 
-import io.enoa.toolkit.str.StrKit;
+import com.jfinal.kit.StrKit;
 
 import javax.sql.DataSource;
 import java.io.File;

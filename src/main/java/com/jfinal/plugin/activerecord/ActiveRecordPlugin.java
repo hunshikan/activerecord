@@ -21,7 +21,7 @@ import com.jfinal.plugin.activerecord.dialect.Dialect;
 import com.jfinal.plugin.activerecord.sql.SqlKit;
 import com.jfinal.plugin.activerecord.cache.EhCache;
 import com.jfinal.plugin.activerecord.dialect.MysqlDialect;
-import io.enoa.toolkit.str.StrKit;
+import com.jfinal.kit.StrKit;
 
 import javax.sql.DataSource;
 import java.sql.Connection;

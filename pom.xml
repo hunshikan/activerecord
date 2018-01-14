@@ -76,17 +76,6 @@
       <scope>provided</scope>
     </dependency>
 
-    <dependency>
-      <groupId>io.enoa</groupId>
-      <artifactId>enoa-toolkit</artifactId>
-      <version>1.0-alpha</version>
-    </dependency>
-
-    <dependency>
-      <groupId>io.enoa</groupId>
-      <artifactId>enoa-json</artifactId>
-      <version>1.0-alpha</version>
-    </dependency>
 
   </dependencies>
 

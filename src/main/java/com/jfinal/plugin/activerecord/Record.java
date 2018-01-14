@@ -16,8 +16,6 @@
 
 package com.jfinal.plugin.activerecord;
 
-import io.enoa.json.kit.JsonKit;
-
 import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
@@ -368,12 +366,12 @@ public class Record implements Serializable {
     return attrValueCollection.toArray(new Object[attrValueCollection.size()]);
   }
 
-  /**
-   * Return json string of this record.
-   */
-  public String toJson() {
-    return JsonKit.toJson(getColumns());
-  }
+//  /**
+//   * Return json string of this record.
+//   */
+//  public String toJson() {
+//    return JsonKit.toJson(getColumns());
+//  }
 }
 
 

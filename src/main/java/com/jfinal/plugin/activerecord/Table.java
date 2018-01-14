@@ -16,7 +16,7 @@
 
 package com.jfinal.plugin.activerecord;
 
-import io.enoa.toolkit.str.StrKit;
+import com.jfinal.kit.StrKit;
 
 import java.util.Collections;
 import java.util.Map;

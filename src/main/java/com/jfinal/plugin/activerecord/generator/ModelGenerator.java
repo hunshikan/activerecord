@@ -19,7 +19,7 @@ package com.jfinal.plugin.activerecord.generator;
 import com.jfinal.kit.Kv;
 import com.jfinal.template.Engine;
 import com.jfinal.template.source.ClassPathSourceFactory;
-import io.enoa.toolkit.str.StrKit;
+import com.jfinal.kit.StrKit;
 
 import java.io.File;
 import java.io.FileWriter;

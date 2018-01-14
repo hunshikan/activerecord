@@ -25,7 +25,7 @@ import com.jfinal.template.expr.ast.ExprList;
 import com.jfinal.template.io.Writer;
 import com.jfinal.template.stat.ParseException;
 import com.jfinal.template.stat.Scope;
-import io.enoa.toolkit.str.StrKit;
+import com.jfinal.kit.StrKit;
 
 import java.util.Map;
 
