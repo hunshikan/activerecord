@@ -17,6 +17,11 @@
     </repository>
   </repositories>
 
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
+    <project-charset>UTF-8</project-charset>
+  </properties>
 
   <dependencies>
 
@@ -74,15 +79,13 @@
     <dependency>
       <groupId>io.enoa</groupId>
       <artifactId>enoa-toolkit</artifactId>
-      <scope>system</scope>
-      <systemPath>${project.basedir}/lib/enoa-toolkit-1.0-alpha.jar</systemPath>
+      <version>1.0-alpha</version>
     </dependency>
 
     <dependency>
       <groupId>io.enoa</groupId>
       <artifactId>enoa-json</artifactId>
-      <scope>system</scope>
-      <systemPath>${project.basedir}/lib/enoa-json-1.0-alpha.jar</systemPath>
+      <version>1.0-alpha</version>
     </dependency>
 
   </dependencies>
